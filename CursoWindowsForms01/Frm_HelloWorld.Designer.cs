@@ -30,6 +30,8 @@
         {
             this.lbl_Titulo = new System.Windows.Forms.Label();
             this.Btn_Sair = new System.Windows.Forms.Button();
+            this.Btn_MudaLabel = new System.Windows.Forms.Button();
+            this.Txt_ConteudoLabel = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_Titulo
@@ -53,11 +55,31 @@
             this.Btn_Sair.UseVisualStyleBackColor = true;
             this.Btn_Sair.Click += new System.EventHandler(this.Btn_Sair_Click);
             // 
+            // Btn_MudaLabel
+            // 
+            this.Btn_MudaLabel.Location = new System.Drawing.Point(54, 77);
+            this.Btn_MudaLabel.Name = "Btn_MudaLabel";
+            this.Btn_MudaLabel.Size = new System.Drawing.Size(271, 23);
+            this.Btn_MudaLabel.TabIndex = 2;
+            this.Btn_MudaLabel.Text = "Alterar Texto Label";
+            this.Btn_MudaLabel.UseVisualStyleBackColor = true;
+            this.Btn_MudaLabel.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Txt_ConteudoLabel
+            // 
+            this.Txt_ConteudoLabel.Location = new System.Drawing.Point(54, 107);
+            this.Txt_ConteudoLabel.Name = "Txt_ConteudoLabel";
+            this.Txt_ConteudoLabel.Size = new System.Drawing.Size(271, 20);
+            this.Txt_ConteudoLabel.TabIndex = 3;
+            this.Txt_ConteudoLabel.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Frm_HelloWorld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Txt_ConteudoLabel);
+            this.Controls.Add(this.Btn_MudaLabel);
             this.Controls.Add(this.Btn_Sair);
             this.Controls.Add(this.lbl_Titulo);
             this.Name = "Frm_HelloWorld";
@@ -72,6 +94,8 @@
 
         private System.Windows.Forms.Label lbl_Titulo;
         private System.Windows.Forms.Button Btn_Sair;
+        private System.Windows.Forms.Button Btn_MudaLabel;
+        private System.Windows.Forms.TextBox Txt_ConteudoLabel;
     }
 }
 

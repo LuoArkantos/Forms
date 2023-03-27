@@ -26,5 +26,16 @@ namespace CursoWindowsForms01
         {
             Application.Exit(); //Vai fechar o app quando o Btn_Sair for clicado
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lbl_Titulo.Text = Txt_ConteudoLabel.Text;
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
