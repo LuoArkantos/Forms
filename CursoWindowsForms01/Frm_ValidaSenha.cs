@@ -13,6 +13,7 @@ namespace CursoWindowsForms01
 {
     public partial class Frm_ValidaSenha : Form
     {
+        bool MostrarSenha = false;
         public Frm_ValidaSenha()
         {
             InitializeComponent();
@@ -31,10 +32,42 @@ namespace CursoWindowsForms01
 
         private void Txt_Senha_KeyDown(object sender, KeyEventArgs e)
         {
-            ChecaForcaSenha verifica = new ChecaForcaSenha();
+            ChecaForcaSenha verifica = new ChecaForcaSenha(); //cria var do tipo ChecaForcaSenha
             ChecaForcaSenha.ForcaDaSenha forcaSenha;
             forcaSenha = verifica.GetForcaDaSenha(Txt_Senha.Text);
             Lbl_Resultado.Text = forcaSenha.ToString();
+
+            //Cor do texto
+            if(Lbl_Resultado.Text == "Inaceitavel" | Lbl_Resultado.Text == "Fraca")
+            {
+                Lbl_Resultado.ForeColor = Color.Red;
+            }
+            if(Lbl_Resultado.Text == "Aceitavel")
+            {
+                Lbl_Resultado.ForeColor = Color.Blue;
+            }
+            if(Lbl_Resultado.Text == "Forte" | Lbl_Resultado.Text == "Segura")
+            {
+                Lbl_Resultado.ForeColor = Color.Green;
+            }
+        }
+
+        private void Btn_MostraSenha_Click(object sender, EventArgs e)
+        {
+            if(MostrarSenha == false)
+            {
+                Txt_Senha.PasswordChar = '\0';
+                Btn_MostraSenha.Text = "Ocultar Senha";
+                MostrarSenha = true;
+                
+            }
+            else
+            {
+                Txt_Senha.PasswordChar = '*';
+                MostrarSenha = false;
+                Btn_MostraSenha.Text = "Mostrar Senha";
+            }
+
         }
     }
     public class ChecaForcaSenha
