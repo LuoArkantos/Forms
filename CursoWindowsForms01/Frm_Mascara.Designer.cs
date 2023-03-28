@@ -44,7 +44,7 @@
             // 
             this.Msk_TextBox.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Msk_TextBox.Location = new System.Drawing.Point(23, 31);
-            this.Msk_TextBox.Mask = "000.000.000-00";
+            this.Msk_TextBox.Mask = "000,000,000-00";
             this.Msk_TextBox.Name = "Msk_TextBox";
             this.Msk_TextBox.Size = new System.Drawing.Size(258, 26);
             this.Msk_TextBox.TabIndex = 1;
@@ -75,6 +75,7 @@
             this.Btn_Hora.TabIndex = 4;
             this.Btn_Hora.Text = "Hora";
             this.Btn_Hora.UseVisualStyleBackColor = true;
+            this.Btn_Hora.Click += new System.EventHandler(this.Btn_Hora_Click);
             // 
             // Btn_CEP
             // 
@@ -84,6 +85,7 @@
             this.Btn_CEP.TabIndex = 5;
             this.Btn_CEP.Text = "CEP";
             this.Btn_CEP.UseVisualStyleBackColor = true;
+            this.Btn_CEP.Click += new System.EventHandler(this.Btn_CEP_Click);
             // 
             // Btn_Moeda
             // 
@@ -93,6 +95,7 @@
             this.Btn_Moeda.TabIndex = 6;
             this.Btn_Moeda.Text = "Moeda";
             this.Btn_Moeda.UseVisualStyleBackColor = true;
+            this.Btn_Moeda.Click += new System.EventHandler(this.Btn_Moeda_Click);
             // 
             // Btn_Data
             // 
@@ -102,6 +105,7 @@
             this.Btn_Data.TabIndex = 7;
             this.Btn_Data.Text = "Data";
             this.Btn_Data.UseVisualStyleBackColor = true;
+            this.Btn_Data.Click += new System.EventHandler(this.Btn_Data_Click);
             // 
             // Btn_Senha
             // 
@@ -111,6 +115,7 @@
             this.Btn_Senha.TabIndex = 8;
             this.Btn_Senha.Text = "Senha";
             this.Btn_Senha.UseVisualStyleBackColor = true;
+            this.Btn_Senha.Click += new System.EventHandler(this.Btn_Senha_Click);
             // 
             // Btn_Telefone
             // 
@@ -120,6 +125,7 @@
             this.Btn_Telefone.TabIndex = 9;
             this.Btn_Telefone.Text = "Telefone";
             this.Btn_Telefone.UseVisualStyleBackColor = true;
+            this.Btn_Telefone.Click += new System.EventHandler(this.Btn_Telefone_Click);
             // 
             // Btn_VerConteudo
             // 
@@ -129,6 +135,7 @@
             this.Btn_VerConteudo.TabIndex = 10;
             this.Btn_VerConteudo.Text = "Ver Conteudo";
             this.Btn_VerConteudo.UseVisualStyleBackColor = true;
+            this.Btn_VerConteudo.Click += new System.EventHandler(this.Btn_VerConteudo_Click);
             // 
             // Frm_Mascara
             // 
@@ -148,6 +155,7 @@
             this.Name = "Frm_Mascara";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Exemplos de Mascaras";
+            this.Load += new System.EventHandler(this.Frm_Mascara_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
