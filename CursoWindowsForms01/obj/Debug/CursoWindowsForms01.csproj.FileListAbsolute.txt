@@ -13,3 +13,4 @@ C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_Demon
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_ValidaSenha.resources
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_Mascara.resources
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_ValidaCPF.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_ValidaCPF2.resources
