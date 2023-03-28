@@ -9,3 +9,4 @@ C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.csproj.Co
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.exe
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.pdb
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_HelloWorld.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_DemonstracaoKey.resources
