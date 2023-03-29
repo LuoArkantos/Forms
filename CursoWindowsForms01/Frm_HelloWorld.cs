@@ -24,7 +24,7 @@ namespace CursoWindowsForms01
 
         private void Btn_Sair_Click(object sender, EventArgs e)
         {
-            Application.Exit(); //Vai fechar o app quando o Btn_Sair for clicado
+            this.Close(); //Vai fechar a janela quando o Btn_Sair for clicado
         }
 
         private void button1_Click(object sender, EventArgs e)
