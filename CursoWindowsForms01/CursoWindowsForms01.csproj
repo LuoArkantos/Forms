@@ -52,7 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cls_Uteis.cs" />
     <Compile Include="Frm_Mascara.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +141,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Frm_Principal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CursoWindowsFormsDLL\CursoWindowsFormsDLL.csproj">
+      <Project>{0dbf30da-7aaf-4bf4-9fe1-4c5cf9fd50c8}</Project>
+      <Name>CursoWindowsFormsDLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

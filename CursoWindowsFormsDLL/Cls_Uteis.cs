@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CursoWindowsForms01
+namespace CursoWindowsFormsDLL
 {
-    internal class Cls_Uteis
+    public class Cls_Uteis
     {
         public static bool Valida(string cpf)
         {
@@ -42,6 +42,5 @@ namespace CursoWindowsForms01
             digito = digito + resto.ToString();
             return cpf.EndsWith(digito);
         }
-
     }
 }

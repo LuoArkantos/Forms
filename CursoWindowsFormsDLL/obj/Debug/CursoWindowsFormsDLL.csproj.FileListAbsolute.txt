@@ -1,0 +1,6 @@
+C:\Users\luizf\Forms\CursoWindowsFormsDLL\bin\Debug\CursoWindowsFormsDLL.dll
+C:\Users\luizf\Forms\CursoWindowsFormsDLL\bin\Debug\CursoWindowsFormsDLL.pdb
+C:\Users\luizf\Forms\CursoWindowsFormsDLL\obj\Debug\CursoWindowsFormsDLL.csproj.AssemblyReference.cache
+C:\Users\luizf\Forms\CursoWindowsFormsDLL\obj\Debug\CursoWindowsFormsDLL.csproj.CoreCompileInputs.cache
+C:\Users\luizf\Forms\CursoWindowsFormsDLL\obj\Debug\CursoWindowsFormsDLL.dll
+C:\Users\luizf\Forms\CursoWindowsFormsDLL\obj\Debug\CursoWindowsFormsDLL.pdb
