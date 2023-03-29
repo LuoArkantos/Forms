@@ -1,0 +1,17 @@
+C:\Users\luizf\Forms\CursoWindowsForms01\bin\Release\CursoWindowsForms01.exe.config
+C:\Users\luizf\Forms\CursoWindowsForms01\bin\Release\CursoWindowsForms01.exe
+C:\Users\luizf\Forms\CursoWindowsForms01\bin\Release\CursoWindowsForms01.pdb
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.AssemblyReference.cache
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.SuggestedBindingRedirects.cache
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_DemonstracaoKey.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_HelloWorld.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_Mascara.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_Principal.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_ValidaCPF.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_ValidaCPF2.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_ValidaSenha.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Properties.Resources.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.GenerateResource.cache
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.CoreCompileInputs.cache
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.exe
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.pdb
