@@ -63,5 +63,20 @@ namespace CursoWindowsForms01
         {
             Application.Exit();
         }
+
+        private void cascataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade); //O parametro é do namespace (System.Windows.Forms.MdiLayold.Cascade)
+        }
+
+        private void horizontalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal); //O parametro é do namespace (System.Windows.Forms.MdiLayold.TileHorizontal)
+        }
+
+        private void verticalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical); //O parametro é do namespace (System.Windows.Forms.MdiLayold.TileVertical)
+        }
     }
 }
