@@ -19,3 +19,4 @@ C:\Users\luizf\Forms\CursoWindowsForms01\bin\Debug\CursoWindowsFormsDLL.dll
 C:\Users\luizf\Forms\CursoWindowsForms01\bin\Debug\CursoWindowsFormsDLL.pdb
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.csproj.CopyComplete
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_PrincipalMenu.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_PrincipalMenu_MDI.resources
