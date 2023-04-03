@@ -48,7 +48,8 @@
             // 
             // Btn_Sair
             // 
-            this.Btn_Sair.Location = new System.Drawing.Point(638, 415);
+            this.Btn_Sair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Sair.Location = new System.Drawing.Point(237, 277);
             this.Btn_Sair.Name = "Btn_Sair";
             this.Btn_Sair.Size = new System.Drawing.Size(150, 23);
             this.Btn_Sair.TabIndex = 1;
@@ -68,9 +69,11 @@
             // 
             // Txt_ConteudoLabel
             // 
+            this.Txt_ConteudoLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Txt_ConteudoLabel.Location = new System.Drawing.Point(54, 107);
             this.Txt_ConteudoLabel.Name = "Txt_ConteudoLabel";
-            this.Txt_ConteudoLabel.Size = new System.Drawing.Size(271, 20);
+            this.Txt_ConteudoLabel.Size = new System.Drawing.Size(285, 20);
             this.Txt_ConteudoLabel.TabIndex = 3;
             this.Txt_ConteudoLabel.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -78,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(399, 312);
             this.Controls.Add(this.Txt_ConteudoLabel);
             this.Controls.Add(this.Btn_MudaLabel);
             this.Controls.Add(this.Btn_Sair);
