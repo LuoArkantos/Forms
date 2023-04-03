@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_PrincipalMenu_UC));
             this.Mnu_Principal = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +42,8 @@
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
+            this.Iml_imagens = new System.Windows.Forms.ImageList(this.components);
+            this.apagarTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Mnu_Principal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +62,7 @@
             // 
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoToolStripMenuItem,
+            this.apagarTabToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
@@ -73,7 +78,7 @@
             this.valídaCPF2ToolStripMenuItem,
             this.valídaSenhaToolStripMenuItem});
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // demonstraçãoKeyToolStripMenuItem
@@ -133,7 +138,7 @@
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -145,11 +150,30 @@
             // 
             // Tbc_Aplicacoes
             // 
+            this.Tbc_Aplicacoes.ImageList = this.Iml_imagens;
             this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 27);
             this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
             this.Tbc_Aplicacoes.SelectedIndex = 0;
             this.Tbc_Aplicacoes.Size = new System.Drawing.Size(800, 399);
             this.Tbc_Aplicacoes.TabIndex = 1;
+            // 
+            // Iml_imagens
+            // 
+            this.Iml_imagens.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Iml_imagens.ImageStream")));
+            this.Iml_imagens.TransparentColor = System.Drawing.Color.Transparent;
+            this.Iml_imagens.Images.SetKeyName(0, "Frm_DemonstracaoKey.png");
+            this.Iml_imagens.Images.SetKeyName(1, "Frm_HelloWorld.png");
+            this.Iml_imagens.Images.SetKeyName(2, "Frm_Mascara.png");
+            this.Iml_imagens.Images.SetKeyName(3, "Frm_ValidaCPF.png");
+            this.Iml_imagens.Images.SetKeyName(4, "Frm_ValidaCPF2.png");
+            this.Iml_imagens.Images.SetKeyName(5, "Frm_ValidaSenha.png");
+            // 
+            // apagarTabToolStripMenuItem
+            // 
+            this.apagarTabToolStripMenuItem.Name = "apagarTabToolStripMenuItem";
+            this.apagarTabToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.apagarTabToolStripMenuItem.Text = "Apagar Tab";
+            this.apagarTabToolStripMenuItem.Click += new System.EventHandler(this.apagarTabToolStripMenuItem_Click);
             // 
             // Frm_PrincipalMenu_UC
             // 
@@ -182,5 +206,7 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem windowsToolStripMenuItem;
         private System.Windows.Forms.TabControl Tbc_Aplicacoes;
+        private System.Windows.Forms.ImageList Iml_imagens;
+        private System.Windows.Forms.ToolStripMenuItem apagarTabToolStripMenuItem;
     }
 }

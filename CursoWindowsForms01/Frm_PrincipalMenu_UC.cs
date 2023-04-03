@@ -12,6 +12,7 @@ namespace CursoWindowsForms01
 {
     public partial class Frm_PrincipalMenu_UC : Form
     {
+        int ContadorDeTabs = 0;
         public Frm_PrincipalMenu_UC()
         {
             InitializeComponent();
@@ -24,10 +25,12 @@ namespace CursoWindowsForms01
 
         private void helloWorldToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            ContadorDeTabs += 1;
             Frm_HelloWorld_UC U = new Frm_HelloWorld_UC();//Chamo a janela
             TabPage tab = new TabPage();//Chamo a funcionalidade tabpage
-            tab.Name = "HelloWorld"; //nomeio a tab (internamente)
-            tab.Text = "HelloWorld";//Nomeio a tab (Visivel na aba)
+            tab.Name = "HelloWorld "+ContadorDeTabs; //nomeio a tab (internamente)
+            tab.Text = "HelloWorld "+ContadorDeTabs;//Nomeio a tab (Visivel na aba)
+            tab.ImageIndex = 1;
             tab.Controls.Add(U);//Adiciono a janela dentro da var tab
             Tbc_Aplicacoes.TabPages.Add(tab);//Exibo a tab //Metodo TabPages.Add(tab) no objeto Tbc
         }
@@ -59,6 +62,14 @@ namespace CursoWindowsForms01
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void apagarTabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(!(Tbc_Aplicacoes.SelectedTab == null)) //Se tab não for nulla
+            {
+                Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab); //Remove a Tab
+            }
         }
     }
 }
