@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoWindowsForms01.Forms_UC;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +20,14 @@ namespace CursoWindowsForms01
         }
         private void demonstraçãoKeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_DemonstracaoKey f = new Frm_DemonstracaoKey();
-            f.ShowDialog();
+            ContadorDeTabs += 1;
+            Frm_DemonstracaoKey_UC u = new Frm_DemonstracaoKey_UC();
+            TabPage tab = new TabPage();
+            tab.Name = "Demonstracao Key " + ContadorDeTabs;
+            tab.Text = "Demonstracao Key " + ContadorDeTabs;
+            tab.ImageIndex = 0;
+            tab.Controls.Add(u);
+            Tbc_Aplicacoes.TabPages.Add(tab);
         }
 
         private void helloWorldToolStripMenuItem_Click(object sender, EventArgs e)
@@ -37,26 +44,50 @@ namespace CursoWindowsForms01
 
         private void máscaraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_Mascara f = new Frm_Mascara();
-            f.ShowDialog();
+            ContadorDeTabs += 1;
+            Frm_Mascara_UC u = new Frm_Mascara_UC();
+            TabPage tab = new TabPage();
+            tab.Name = "Mascara " + ContadorDeTabs;
+            tab.Text = "Mascara " + ContadorDeTabs;
+            tab.ImageIndex = 2;
+            tab.Controls.Add(u);
+            Tbc_Aplicacoes.TabPages.Add(tab);
         }
 
         private void valídaCPFToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_ValidaCPF f = new Frm_ValidaCPF();
-            f.ShowDialog();
+            ContadorDeTabs += 1;
+            Frm_ValidaCPF_UC u = new Frm_ValidaCPF_UC();
+            TabPage tab = new TabPage();
+            tab.Name = "Valída CPF " + ContadorDeTabs;
+            tab.Text = "Valída CPF " + ContadorDeTabs;
+            tab.ImageIndex = 3;
+            tab.Controls.Add(u);
+            Tbc_Aplicacoes.TabPages.Add(tab);
         }
 
         private void valídaCPF2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_ValidaCPF2 f = new Frm_ValidaCPF2();
-            f.ShowDialog();
+            ContadorDeTabs += 1;
+            Frm_ValidaCPF2_UC u = new Frm_ValidaCPF2_UC();
+            TabPage tab = new TabPage();
+            tab.Name = "Valída CPF 2 " + ContadorDeTabs;
+            tab.Text = "Valída CPF 2 " + ContadorDeTabs;
+            tab.ImageIndex = 4;
+            tab.Controls.Add(u);
+            Tbc_Aplicacoes.TabPages.Add(tab);
         }
 
         private void valídaSenhaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_ValidaSenha f = new Frm_ValidaSenha();
-            f.ShowDialog();
+            ContadorDeTabs += 1;
+            Frm_ValidaSenha_UC u = new Frm_ValidaSenha_UC();
+            TabPage tab = new TabPage();
+            tab.Name = "Valída Senha " + ContadorDeTabs;
+            tab.Text = "Valída Senha " + ContadorDeTabs;
+            tab.ImageIndex = 5;
+            tab.Controls.Add(u);
+            Tbc_Aplicacoes.TabPages.Add(tab);
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
