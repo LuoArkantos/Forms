@@ -34,6 +34,7 @@ namespace CursoWindowsForms01.Forms_UC
             vConteudo = vConteudo.Replace(".", "").Replace("-", "");
             vConteudo = vConteudo.Trim();
 
+
             if (vConteudo == "")
             {
                 MessageBox.Show("CPF VAZIO", "Validação de CPF", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -46,7 +47,13 @@ namespace CursoWindowsForms01.Forms_UC
                 }
                 else
                 {
-                    if (MessageBox.Show("Deseja realmente validar o CPF?", "Mensagem de Validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) //Abre uma janela com opções SIM e NAO, quando clicado em SIM, executa o corpo da condicional
+                    Frm_Questao Db_Questao = new Frm_Questao();
+                    Db_Questao.ShowDialog();
+                    
+                    
+                    //if (MessageBox.Show("Deseja realmente validar o CPF?", "Mensagem de Validação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) //Abre uma janela com opções SIM e NAO, quando clicado em SIM, executa o corpo da condicional
+
+                    if (Db_Questao.DialogResult == DialogResult.Yes) //Ve se o DialogResult do DB é igual a Yes para executar codigo do escopo
                     {
                         bool validaCpf = false;
                         validaCpf = Cls_Uteis.Valida(Msk_CPF.Text);

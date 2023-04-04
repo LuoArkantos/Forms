@@ -148,6 +148,12 @@
     <Compile Include="Frm_PrincipalMenu_UC.Designer.cs">
       <DependentUpon>Frm_PrincipalMenu_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Questao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Questao.Designer.cs">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Frm_DemonstracaoKey.resx">
@@ -164,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_UC\Frm_HelloWorld_UC.resx">
       <DependentUpon>Frm_HelloWorld_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms_UC\Frm_ValidaCPF2_UC.resx">
+      <DependentUpon>Frm_ValidaCPF2_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal.resx">
       <DependentUpon>Frm_Principal.cs</DependentUpon>
@@ -185,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_PrincipalMenu_UC.resx">
       <DependentUpon>Frm_PrincipalMenu_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Questao.resx">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -223,6 +235,7 @@
     <Content Include="Images\Frm_ValidaCPF2.png" />
     <Content Include="Images\Frm_ValidaSenha.ico" />
     <Content Include="Images\Frm_ValidaSenha.png" />
+    <None Include="Images\perguntando.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CursoWindowsFormsDLL\CursoWindowsFormsDLL.csproj">
