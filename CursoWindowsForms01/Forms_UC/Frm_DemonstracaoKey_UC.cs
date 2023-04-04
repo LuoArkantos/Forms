@@ -37,5 +37,10 @@ namespace CursoWindowsForms01.Forms_UC
             Lbl_Upper.Text = "";
             Lbl_Lower.Text = "";
         }
+
+        private void Frm_DemonstracaoKey_UC_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

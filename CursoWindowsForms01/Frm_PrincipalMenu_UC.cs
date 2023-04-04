@@ -23,6 +23,7 @@ namespace CursoWindowsForms01
             ContadorDeTabs += 1;
             Frm_DemonstracaoKey_UC u = new Frm_DemonstracaoKey_UC();
             TabPage tab = new TabPage();
+            u.Dock = DockStyle.Fill;
             tab.Name = "Demonstracao Key " + ContadorDeTabs;
             tab.Text = "Demonstracao Key " + ContadorDeTabs;
             tab.ImageIndex = 0;
@@ -35,6 +36,7 @@ namespace CursoWindowsForms01
             ContadorDeTabs += 1;
             Frm_HelloWorld_UC U = new Frm_HelloWorld_UC();//Chamo a janela
             TabPage tab = new TabPage();//Chamo a funcionalidade tabpage
+            U.Dock = DockStyle.Fill; //function Dock recebendo DockStyle.Fill fará a tab responder ao tamanho da janela, ficando responsivo.
             tab.Name = "HelloWorld "+ContadorDeTabs; //nomeio a tab (internamente)
             tab.Text = "HelloWorld "+ContadorDeTabs;//Nomeio a tab (Visivel na aba)
             tab.ImageIndex = 1;
@@ -47,6 +49,7 @@ namespace CursoWindowsForms01
             ContadorDeTabs += 1;
             Frm_Mascara_UC u = new Frm_Mascara_UC();
             TabPage tab = new TabPage();
+            u.Dock = DockStyle.Fill;
             tab.Name = "Mascara " + ContadorDeTabs;
             tab.Text = "Mascara " + ContadorDeTabs;
             tab.ImageIndex = 2;
@@ -59,6 +62,7 @@ namespace CursoWindowsForms01
             ContadorDeTabs += 1;
             Frm_ValidaCPF_UC u = new Frm_ValidaCPF_UC();
             TabPage tab = new TabPage();
+            u.Dock = DockStyle.Fill;
             tab.Name = "Valída CPF " + ContadorDeTabs;
             tab.Text = "Valída CPF " + ContadorDeTabs;
             tab.ImageIndex = 3;
@@ -71,6 +75,7 @@ namespace CursoWindowsForms01
             ContadorDeTabs += 1;
             Frm_ValidaCPF2_UC u = new Frm_ValidaCPF2_UC();
             TabPage tab = new TabPage();
+            u.Dock = DockStyle.Fill;
             tab.Name = "Valída CPF 2 " + ContadorDeTabs;
             tab.Text = "Valída CPF 2 " + ContadorDeTabs;
             tab.ImageIndex = 4;
@@ -83,6 +88,7 @@ namespace CursoWindowsForms01
             ContadorDeTabs += 1;
             Frm_ValidaSenha_UC u = new Frm_ValidaSenha_UC();
             TabPage tab = new TabPage();
+            u.Dock = DockStyle.Fill;
             tab.Name = "Valída Senha " + ContadorDeTabs;
             tab.Text = "Valída Senha " + ContadorDeTabs;
             tab.ImageIndex = 5;

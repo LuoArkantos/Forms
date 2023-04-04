@@ -39,11 +39,11 @@
             this.valídaCPFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.valídaCPF2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.valídaSenhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.apagarTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tbc_Aplicacoes = new System.Windows.Forms.TabControl();
             this.Iml_imagens = new System.Windows.Forms.ImageList(this.components);
-            this.apagarTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Mnu_Principal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             this.valídaCPF2ToolStripMenuItem,
             this.valídaSenhaToolStripMenuItem});
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.novoToolStripMenuItem.Text = "Novo";
             // 
             // demonstraçãoKeyToolStripMenuItem
@@ -135,10 +135,17 @@
             this.valídaSenhaToolStripMenuItem.Text = "Valída &Senha";
             this.valídaSenhaToolStripMenuItem.Click += new System.EventHandler(this.valídaSenhaToolStripMenuItem_Click);
             // 
+            // apagarTabToolStripMenuItem
+            // 
+            this.apagarTabToolStripMenuItem.Name = "apagarTabToolStripMenuItem";
+            this.apagarTabToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.apagarTabToolStripMenuItem.Text = "Apagar Tab";
+            this.apagarTabToolStripMenuItem.Click += new System.EventHandler(this.apagarTabToolStripMenuItem_Click);
+            // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -150,11 +157,14 @@
             // 
             // Tbc_Aplicacoes
             // 
+            this.Tbc_Aplicacoes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Tbc_Aplicacoes.ImageList = this.Iml_imagens;
             this.Tbc_Aplicacoes.Location = new System.Drawing.Point(0, 27);
             this.Tbc_Aplicacoes.Name = "Tbc_Aplicacoes";
             this.Tbc_Aplicacoes.SelectedIndex = 0;
-            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(800, 399);
+            this.Tbc_Aplicacoes.Size = new System.Drawing.Size(800, 418);
             this.Tbc_Aplicacoes.TabIndex = 1;
             // 
             // Iml_imagens
@@ -167,13 +177,6 @@
             this.Iml_imagens.Images.SetKeyName(3, "Frm_ValidaCPF.png");
             this.Iml_imagens.Images.SetKeyName(4, "Frm_ValidaCPF2.png");
             this.Iml_imagens.Images.SetKeyName(5, "Frm_ValidaSenha.png");
-            // 
-            // apagarTabToolStripMenuItem
-            // 
-            this.apagarTabToolStripMenuItem.Name = "apagarTabToolStripMenuItem";
-            this.apagarTabToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.apagarTabToolStripMenuItem.Text = "Apagar Tab";
-            this.apagarTabToolStripMenuItem.Click += new System.EventHandler(this.apagarTabToolStripMenuItem_Click);
             // 
             // Frm_PrincipalMenu_UC
             // 

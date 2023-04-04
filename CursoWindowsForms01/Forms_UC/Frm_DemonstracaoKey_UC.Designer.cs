@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_DemonstracaoKey));
             this.Txt_Input = new System.Windows.Forms.TextBox();
             this.Txt_Msg = new System.Windows.Forms.TextBox();
             this.Btn_Reset = new System.Windows.Forms.Button();
@@ -48,8 +47,8 @@
             // 
             // Txt_Msg
             // 
-            this.Txt_Msg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.Txt_Msg.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Txt_Msg.Location = new System.Drawing.Point(8, 40);
             this.Txt_Msg.Multiline = true;
@@ -107,11 +106,11 @@
             this.Lbl_Lower.Size = new System.Drawing.Size(32, 23);
             this.Lbl_Lower.TabIndex = 6;
             // 
-            // Frm_DemonstracaoKey
+            // Frm_DemonstracaoKey_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 281);
+            this.AutoSize = true;
             this.Controls.Add(this.Lbl_Lower);
             this.Controls.Add(this.Lbl_Upper);
             this.Controls.Add(this.Lbl_Maius);
@@ -119,8 +118,9 @@
             this.Controls.Add(this.Btn_Reset);
             this.Controls.Add(this.Txt_Msg);
             this.Controls.Add(this.Txt_Input);
-            this.Name = "Frm_DemonstracaoKey";
-            this.Text = "Demonstração Evento Key";
+            this.Name = "Frm_DemonstracaoKey_UC";
+            this.Size = new System.Drawing.Size(409, 281);
+            this.Load += new System.EventHandler(this.Frm_DemonstracaoKey_UC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

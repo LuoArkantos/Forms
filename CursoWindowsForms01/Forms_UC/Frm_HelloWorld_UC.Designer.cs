@@ -50,6 +50,7 @@
             this.Btn_MudaLabel.TabIndex = 5;
             this.Btn_MudaLabel.Text = "Alterar Texto Label";
             this.Btn_MudaLabel.UseVisualStyleBackColor = true;
+            this.Btn_MudaLabel.Click += new System.EventHandler(this.Btn_MudaLabel_Click);
             // 
             // lbl_Titulo
             // 
