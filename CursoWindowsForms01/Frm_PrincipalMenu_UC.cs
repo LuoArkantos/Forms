@@ -13,19 +13,25 @@ namespace CursoWindowsForms01
 {
     public partial class Frm_PrincipalMenu_UC : Form
     {
-        int ContadorDeTabs = 0;
+        int ControleDemonstracaoKey = 0;
+        int ControleHelloWorld = 0;
+        int ControleMascara = 0;
+        int ControleValidaCPF = 0;
+        int ControleValidaCPF2 = 0;
+        int ControleValidaSenha = 0;
+        int ControleArquivoImagem = 0;
         public Frm_PrincipalMenu_UC()
         {
             InitializeComponent();
         }
         private void demonstraçãoKeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ContadorDeTabs += 1;
+            ControleDemonstracaoKey += 1;
             Frm_DemonstracaoKey_UC u = new Frm_DemonstracaoKey_UC();
             TabPage tab = new TabPage();
             u.Dock = DockStyle.Fill;
-            tab.Name = "Demonstracao Key " + ContadorDeTabs;
-            tab.Text = "Demonstracao Key " + ContadorDeTabs;
+            tab.Name = "Demonstracao Key " + ControleDemonstracaoKey;
+            tab.Text = "Demonstracao Key " + ControleDemonstracaoKey;
             tab.ImageIndex = 0;
             tab.Controls.Add(u);
             Tbc_Aplicacoes.TabPages.Add(tab);
@@ -33,12 +39,12 @@ namespace CursoWindowsForms01
 
         private void helloWorldToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ContadorDeTabs += 1;
+            ControleHelloWorld += 1;
             Frm_HelloWorld_UC U = new Frm_HelloWorld_UC();//Chamo a janela
             TabPage tab = new TabPage();//Chamo a funcionalidade tabpage
             U.Dock = DockStyle.Fill; //function Dock recebendo DockStyle.Fill fará a tab responder ao tamanho da janela, ficando responsivo.
-            tab.Name = "HelloWorld "+ContadorDeTabs; //nomeio a tab (internamente)
-            tab.Text = "HelloWorld "+ContadorDeTabs;//Nomeio a tab (Visivel na aba)
+            tab.Name = "HelloWorld "+ ControleHelloWorld; //nomeio a tab (internamente)
+            tab.Text = "HelloWorld "+ ControleHelloWorld;//Nomeio a tab (Visivel na aba)
             tab.ImageIndex = 1;
             tab.Controls.Add(U);//Adiciono a janela dentro da var tab
             Tbc_Aplicacoes.TabPages.Add(tab);//Exibo a tab //Metodo TabPages.Add(tab) no objeto Tbc
@@ -46,12 +52,12 @@ namespace CursoWindowsForms01
 
         private void máscaraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ContadorDeTabs += 1;
+            ControleMascara += 1;
             Frm_Mascara_UC u = new Frm_Mascara_UC();
             TabPage tab = new TabPage();
             u.Dock = DockStyle.Fill;
-            tab.Name = "Mascara " + ContadorDeTabs;
-            tab.Text = "Mascara " + ContadorDeTabs;
+            tab.Name = "Mascara " + ControleMascara;
+            tab.Text = "Mascara " + ControleMascara;
             tab.ImageIndex = 2;
             tab.Controls.Add(u);
             Tbc_Aplicacoes.TabPages.Add(tab);
@@ -59,12 +65,12 @@ namespace CursoWindowsForms01
 
         private void valídaCPFToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ContadorDeTabs += 1;
+            ControleValidaCPF += 1;
             Frm_ValidaCPF_UC u = new Frm_ValidaCPF_UC();
             TabPage tab = new TabPage();
             u.Dock = DockStyle.Fill;
-            tab.Name = "Valída CPF " + ContadorDeTabs;
-            tab.Text = "Valída CPF " + ContadorDeTabs;
+            tab.Name = "Valída CPF " + ControleValidaCPF;
+            tab.Text = "Valída CPF " + ControleValidaCPF;
             tab.ImageIndex = 3;
             tab.Controls.Add(u);
             Tbc_Aplicacoes.TabPages.Add(tab);
@@ -72,12 +78,12 @@ namespace CursoWindowsForms01
 
         private void valídaCPF2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ContadorDeTabs += 1;
+            ControleValidaCPF2 += 1;
             Frm_ValidaCPF2_UC u = new Frm_ValidaCPF2_UC();
             TabPage tab = new TabPage();
             u.Dock = DockStyle.Fill;
-            tab.Name = "Valída CPF 2 " + ContadorDeTabs;
-            tab.Text = "Valída CPF 2 " + ContadorDeTabs;
+            tab.Name = "Valída CPF 2 " + ControleValidaCPF2;
+            tab.Text = "Valída CPF 2 " + ControleValidaCPF2;
             tab.ImageIndex = 4;
             tab.Controls.Add(u);
             Tbc_Aplicacoes.TabPages.Add(tab);
@@ -85,12 +91,12 @@ namespace CursoWindowsForms01
 
         private void valídaSenhaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ContadorDeTabs += 1;
+            ControleValidaSenha += 1;
             Frm_ValidaSenha_UC u = new Frm_ValidaSenha_UC();
             TabPage tab = new TabPage();
             u.Dock = DockStyle.Fill;
-            tab.Name = "Valída Senha " + ContadorDeTabs;
-            tab.Text = "Valída Senha " + ContadorDeTabs;
+            tab.Name = "Valída Senha " + ControleValidaSenha;
+            tab.Text = "Valída Senha " + ControleValidaSenha;
             tab.ImageIndex = 5;
             tab.Controls.Add(u);
             Tbc_Aplicacoes.TabPages.Add(tab);
@@ -107,6 +113,32 @@ namespace CursoWindowsForms01
             {
                 Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab); //Remove a Tab
             }
+        }
+
+        private void abrirImagemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Db = new OpenFileDialog(); //Cria a DB do tipo Abertura de arquivos.
+
+            Db.Title = "Abrir Arquivo";
+            Db.InitialDirectory = "C:\\Users\\luizf\\Forms\\CursoWindowsForms01\\Images"; //Precisa ter barras duplas para o C# não entender como comando, sim como endereço
+            Db.Filter = "PNG|*.PNG"; //filtra o tip de arquivo q vai aparecer
+            
+             
+            if (Db.ShowDialog() == DialogResult.OK)
+            {
+                string nomeArquivo = Db.FileName; //Vai pegar o nome da imagem para exibir na label do programa
+
+                ControleArquivoImagem += 1;
+                Frm_ArquivoImagem_UC u = new Frm_ArquivoImagem_UC(nomeArquivo); //parametro do construtor para modificar dados da tela
+                TabPage tab = new TabPage();
+                u.Dock = DockStyle.Fill;
+                tab.Name = "Arquivo Imagem " + ControleArquivoImagem;
+                tab.Text = "Arquivo Imagem " + ControleArquivoImagem;
+                tab.ImageIndex = 6;
+                tab.Controls.Add(u);
+                Tbc_Aplicacoes.TabPages.Add(tab);
+            }
+            
         }
     }
 }
