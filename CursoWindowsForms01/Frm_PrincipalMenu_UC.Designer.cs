@@ -92,7 +92,7 @@
             // 
             // helloWorldToolStripMenuItem
             // 
-            this.helloWorldToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_HelloWorld2;
+            this.helloWorldToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_HelloWorld;
             this.helloWorldToolStripMenuItem.Name = "helloWorldToolStripMenuItem";
             this.helloWorldToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
             this.helloWorldToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
@@ -101,7 +101,7 @@
             // 
             // máscaraToolStripMenuItem
             // 
-            this.máscaraToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_Mascara2;
+            this.máscaraToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_Mascara;
             this.máscaraToolStripMenuItem.Name = "máscaraToolStripMenuItem";
             this.máscaraToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
             this.máscaraToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
@@ -110,7 +110,7 @@
             // 
             // valídaCPFToolStripMenuItem
             // 
-            this.valídaCPFToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_ValidaCPF3;
+            this.valídaCPFToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_ValidaCPF;
             this.valídaCPFToolStripMenuItem.Name = "valídaCPFToolStripMenuItem";
             this.valídaCPFToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.valídaCPFToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
@@ -119,7 +119,7 @@
             // 
             // valídaCPF2ToolStripMenuItem
             // 
-            this.valídaCPF2ToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_ValidaCPF22;
+            this.valídaCPF2ToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_ValidaCPF2;
             this.valídaCPF2ToolStripMenuItem.Name = "valídaCPF2ToolStripMenuItem";
             this.valídaCPF2ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.valídaCPF2ToolStripMenuItem.Size = new System.Drawing.Size(214, 22);
@@ -128,7 +128,7 @@
             // 
             // valídaSenhaToolStripMenuItem
             // 
-            this.valídaSenhaToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_ValidaSenha2;
+            this.valídaSenhaToolStripMenuItem.Image = global::CursoWindowsForms01.Properties.Resources.Frm_ValidaSenha;
             this.valídaSenhaToolStripMenuItem.Name = "valídaSenhaToolStripMenuItem";
             this.valídaSenhaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.valídaSenhaToolStripMenuItem.Size = new System.Drawing.Size(214, 22);

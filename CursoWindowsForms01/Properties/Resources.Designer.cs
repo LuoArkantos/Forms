@@ -83,16 +83,6 @@ namespace CursoWindowsForms01.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Frm_DemonstracaoKey2 {
-            get {
-                object obj = ResourceManager.GetObject("Frm_DemonstracaoKey2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Frm_HelloWorld {
             get {
                 object obj = ResourceManager.GetObject("Frm_HelloWorld", resourceCulture);
@@ -113,16 +103,6 @@ namespace CursoWindowsForms01.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Frm_HelloWorld2 {
-            get {
-                object obj = ResourceManager.GetObject("Frm_HelloWorld2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Frm_Mascara {
             get {
                 object obj = ResourceManager.GetObject("Frm_Mascara", resourceCulture);
@@ -137,16 +117,6 @@ namespace CursoWindowsForms01.Properties {
             get {
                 object obj = ResourceManager.GetObject("Frm_Mascara1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Frm_Mascara2 {
-            get {
-                object obj = ResourceManager.GetObject("Frm_Mascara2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -213,26 +183,6 @@ namespace CursoWindowsForms01.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Frm_ValidaCPF22 {
-            get {
-                object obj = ResourceManager.GetObject("Frm_ValidaCPF22", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Frm_ValidaCPF3 {
-            get {
-                object obj = ResourceManager.GetObject("Frm_ValidaCPF3", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Frm_ValidaSenha {
             get {
                 object obj = ResourceManager.GetObject("Frm_ValidaSenha", resourceCulture);
@@ -247,16 +197,6 @@ namespace CursoWindowsForms01.Properties {
             get {
                 object obj = ResourceManager.GetObject("Frm_ValidaSenha1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Frm_ValidaSenha2 {
-            get {
-                object obj = ResourceManager.GetObject("Frm_ValidaSenha2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

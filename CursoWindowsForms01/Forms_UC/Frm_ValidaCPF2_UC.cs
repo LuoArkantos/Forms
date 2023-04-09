@@ -47,7 +47,7 @@ namespace CursoWindowsForms01.Forms_UC
                 }
                 else
                 {
-                    Frm_Questao Db_Questao = new Frm_Questao();
+                    Frm_Questao Db_Questao = new Frm_Questao("Frm_ValidaCPF2", "Quer mesmo validar?"); //Nesta chamada devo passar os parametros exigidos no construtor do form Questao(nome da imagem, texto da label) para exibir no DialoBox.
                     Db_Questao.ShowDialog();
                     
                     

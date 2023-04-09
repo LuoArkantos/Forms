@@ -12,9 +12,17 @@ namespace CursoWindowsForms01
 {
     public partial class Frm_Questao : Form
     {
-        public Frm_Questao()
+        public Frm_Questao(string nomeImagem, string mensagem)
         {
             InitializeComponent();
+
+            Image MyImage = (Image)global::CursoWindowsForms01.Properties.Resources.ResourceManager.GetObject(nomeImagem); //Cria a variável MyImage do tipo IMAGE, pegando de Global, Os recursos das propriedades do projeto (Vai entrar em resources do projeto e verificar o conteudo) ResourceManager.GetObj(var) vai PEGAR o objeto q está no recurso e executar.
+
+            Pic_Imagem.Image = MyImage; //O objeto imagem do form vai receber a variavel MyImage, q vai ter a imagem passada
+
+            Lbl_Questao.Text = mensagem; // A label vai receber a mensagem para exibir.
+
+
         }
 
         private void Btn_Ok_Click(object sender, EventArgs e)
