@@ -23,6 +23,11 @@ namespace CursoWindowsForms01
         public Frm_PrincipalMenu_UC()
         {
             InitializeComponent();
+
+            novoToolStripMenuItem.Enabled = false; //.Enabled true e false dizem se o botão é habilitado ou não
+            apagarTabToolStripMenuItem.Enabled = false;
+            abrirImagemToolStripMenuItem.Enabled = false;
+            desconectarToolStripMenuItem.Enabled = false;
         }
         private void demonstraçãoKeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -139,6 +144,30 @@ namespace CursoWindowsForms01
                 Tbc_Aplicacoes.TabPages.Add(tab);
             }
             
+        }
+
+        private void conectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Login l = new Frm_Login();
+            l.ShowDialog();
+
+            if (l.DialogResult == DialogResult.OK)
+            {
+                novoToolStripMenuItem.Enabled = true;
+                apagarTabToolStripMenuItem.Enabled = true;
+                abrirImagemToolStripMenuItem.Enabled = true;
+                conectarToolStripMenuItem.Enabled = false;
+                desconectarToolStripMenuItem.Enabled = true;
+            }
+        }
+
+        private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            novoToolStripMenuItem.Enabled = false;
+            apagarTabToolStripMenuItem.Enabled = false;
+            abrirImagemToolStripMenuItem.Enabled = false;
+            conectarToolStripMenuItem.Enabled = true;
+            desconectarToolStripMenuItem.Enabled = false;
         }
     }
 }

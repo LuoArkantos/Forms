@@ -26,3 +26,4 @@ C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Forms_UC.
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_Questao.resources
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Forms_UC.Frm_ValidaCPF2_UC.resources
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_ArquivoImagem_UC.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Debug\CursoWindowsForms01.Frm_Login.resources
