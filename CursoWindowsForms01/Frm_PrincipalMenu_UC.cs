@@ -153,21 +153,45 @@ namespace CursoWindowsForms01
 
             if (l.DialogResult == DialogResult.OK)
             {
-                novoToolStripMenuItem.Enabled = true;
-                apagarTabToolStripMenuItem.Enabled = true;
-                abrirImagemToolStripMenuItem.Enabled = true;
-                conectarToolStripMenuItem.Enabled = false;
-                desconectarToolStripMenuItem.Enabled = true;
+                string usuario = l.usuario; //Pega os dados do usuario e senha inseridos
+                string senha = l.senha;
+
+                if (CursoWindowsFormsDLL.Cls_Uteis.validaSenhaLogin(senha) == true) //pega metodo de verificacao na classe dll
+                {
+                    novoToolStripMenuItem.Enabled = true;
+                    apagarTabToolStripMenuItem.Enabled = true;
+                    abrirImagemToolStripMenuItem.Enabled = true;
+                    conectarToolStripMenuItem.Enabled = false;
+                    desconectarToolStripMenuItem.Enabled = true;
+
+                    MessageBox.Show($"Bem vindo {usuario}!", "Usuário Autenticado", MessageBoxButtons.OK, MessageBoxIcon.Information); //Mostra messagebox de autorizacao 
+                }
+                else
+                {
+                    MessageBox.Show($"Senha invalida!", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
             }
         }
 
         private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            novoToolStripMenuItem.Enabled = false;
-            apagarTabToolStripMenuItem.Enabled = false;
-            abrirImagemToolStripMenuItem.Enabled = false;
-            conectarToolStripMenuItem.Enabled = true;
-            desconectarToolStripMenuItem.Enabled = false;
+            //Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab); //Remove a Tab
+            Frm_Questao ConfirmacaoBox = new Frm_Questao("perguntando", "Quer mesmo sair?");
+
+            if (ConfirmacaoBox.ShowDialog() == DialogResult.Yes)
+            {
+                for (int i = Tbc_Aplicacoes.TabPages.Count; i > 0; i += -1)
+                {
+                    Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab); //Remove a Tab
+                }
+
+                novoToolStripMenuItem.Enabled = false;
+                apagarTabToolStripMenuItem.Enabled = false;
+                abrirImagemToolStripMenuItem.Enabled = false;
+                conectarToolStripMenuItem.Enabled = true;
+                desconectarToolStripMenuItem.Enabled = false;
+            }
         }
     }
 }

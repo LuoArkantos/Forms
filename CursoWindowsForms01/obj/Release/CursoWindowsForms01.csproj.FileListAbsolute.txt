@@ -15,3 +15,15 @@ C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.CoreCompileInputs.cache
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.exe
 C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.pdb
+C:\Users\luizf\Forms\CursoWindowsForms01\bin\Release\CursoWindowsFormsDLL.dll
+C:\Users\luizf\Forms\CursoWindowsForms01\bin\Release\CursoWindowsFormsDLL.pdb
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Forms_UC.Frm_DemonstracaoKey_UC.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_HelloWorld_UC.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Forms_UC.Frm_ValidaCPF2_UC.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_ArquivoImagem_UC.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_Login.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_PrincipalMenu.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_PrincipalMenu_MDI.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_PrincipalMenu_UC.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.Frm_Questao.resources
+C:\Users\luizf\Forms\CursoWindowsForms01\obj\Release\CursoWindowsForms01.csproj.CopyComplete
